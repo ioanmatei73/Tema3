@@ -1,0 +1,397 @@
+@import'breakpoints';
+@import'fonts';
+ 
+body {
+    background-color: #EFF0F3; 
+    padding: 3rem 5vw; 
+        
+    .container {
+        display: grid; 
+        grid: auto / 100%; 
+        row-gap: 64px; 
+        align-items: center; 
+        justify-items: center;
+        
+        .card-t {           
+            display: grid; 
+            grid: auto / 65% 35%; 
+            height: 240px; 
+            width: 672px; 
+            background-color: #fff; 
+            border-radius: 16px; 
+            
+            @include tablet {
+                display: none;
+            }
+
+            @include mobile {
+                display: none;
+            }
+            
+            .card-t-left {
+
+                .card-t-title {
+                    width: 46px; 
+                    height: 25px; 
+                    margin: 77px 0 0 40px; 
+                    font-family: 'DM Serif Display'; 
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 108px;
+                    line-height: 25px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                }
+                .card-t-title.first {
+                    color: #2A4EAA;
+                }
+
+                .card-t-title.second {
+                    color: #006B76;
+                }
+
+                .card-t-content {                    
+                    width: 415px;
+                    height: 54px;
+                    margin-left: 42px;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #6E798C;
+                }
+
+                .card-t-footer {                  
+                    width: 180px;
+                    height: 25px;
+                    margin: 0 0 0 42px;
+                    font-family: 'DM Serif Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 25px;
+                    letter-spacing: 0.03em;
+                    color: #081F32;
+                }
+            }
+
+            .card-t-right {               
+                width: 140px;
+                height: 140px;
+                margin: calc(50% - 140px/2) 0 0 calc(50% - 140px/2); 
+            }
+        }
+
+        .card-c {
+            display: grid; 
+            grid: auto / 20% 50% 30%; 
+            height: 224px; 
+            width: 888px; 
+            background-color: #fff; 
+            border-radius: 16px;
+
+            @include tablet {
+                display: none;
+            }
+
+            @include mobile {
+                display: none;
+            }
+
+            .card-c-left {
+                box-sizing: border-box;
+                width: 128px;
+                height: 144px;
+                margin: 40px 0 0 40px;
+                border: 1px solid #000;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 4px;
+            }
+
+            .card-c-left.first {
+                background: linear-gradient(321.69deg, #FF6188 0%, #FFB199 100%);               
+            }
+
+            .card-c-left.second {
+                background: linear-gradient(321.69deg, #4481EB 0%, #04BEFE 100%); 
+            }
+
+            .card-c-left.third {
+                background: linear-gradient(132.9deg, #63F7A1 1.3%, #27AE60 98.06%), linear-gradient(143.36deg, #D6FF94 3.66%, #3DC24B 103.19%);                
+            }
+
+            .card-c-middle {
+
+                .c-midle-title {
+                    width: 440px;
+                    height: 25px;
+                    margin: 42px 0 0 40px; 
+                    font-family: 'DM Serif Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 25px;
+                    color: #081F32;
+                }
+
+                .c-middle-author {
+                    width: 273px;
+                    height: 25px;
+                    margin: 10px 0 0 40px; 
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 25px; 
+                    color: #A5ADBB;
+                }
+
+                .c-middle-text {                    
+                    width: 392px;
+                    height: 75px;
+                    margin: 10px 0 0 40px; 
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #6E798C;
+                }
+            }
+
+            .card-c-right {                
+                display: grid;
+                grid: auto / 30% 70%; 
+
+                .c-right-hour-icon {                    
+                    width: 24px;
+                    height: 24px;
+                    margin: 49px 0 0 60px; 
+                }
+
+                .c-right-hour-text {                    
+                    width: 105px;
+                    height: 25px;
+                    margin: 49px 0 0 20px; 
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #081F32;
+                }
+
+                .c-right-lesson-icon {                    
+                    width: 24px;
+                    height: 24px;
+                    margin: 0 0 0 60px;                     
+                }
+
+                .c-right-lesson-text {                    
+                    width: 105px;
+                    height: 25px;
+                    margin: 0 0 0 20px; 
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #081F32;
+                }
+
+                .c-right-level-icon {                    
+                    width: 24px;
+                    height: 24px;
+                    margin: 0 0 0 60px;                     
+                }
+
+                .c-right-level-text {                   
+                    width: 105px;
+                    height: 25px;
+                    margin: 0 0 0 20px; 
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #081F32;
+                }
+            }
+        }
+
+        .card-t-min {
+            display: none;
+            height: 512px;
+            width: 448px;
+            background: #fff;
+            border-radius: 16px;
+
+            @include tablet {
+                display: grid;
+                grid: auto / 100%;
+            }
+
+            @include mobile {
+                display: grid;
+                grid: auto / 100%;
+            }
+
+            .card-t-title-min {
+                width: 82px;
+                height: 25px;
+                margin: 123px 0 0 40px;
+                font-family: 'DM Serif Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 160px;
+                line-height: 25px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #F8593B;
+            }
+
+            .card-t-content-min {
+                height: 160px;
+                margin: 32px 40px 0 40px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 40px;
+                display: flex;
+                align-items: center;
+                color: #6E798C;
+            }
+
+            .card-t-divider-min {
+                height: 2px;
+                margin: 40px 40px 0 40px;
+                background: #EBECED;
+            }
+
+            .card-t-footer-min {
+                display: grid;
+                grid: auto / 30% 70%;
+
+                .card-t-footer-min-img {
+                    width: 64px;
+                    height: 64px;
+                    margin: 30px 0 0 40px;
+                }
+
+                .card-t-footer-min-name {
+                    width: 140px;
+                    height: 25px;
+                    margin: 40px 24px 0 0;
+                    font-family: 'DM Serif Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 25px;
+                    letter-spacing: 0.03em;
+                    color: #081F32;
+                }
+
+                .card-t-footer-min-desc {
+                    width: 80px;
+                    height: 25px;
+                    margin: 0 24px 40px 0;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 25px;
+                    letter-spacing: 0.1em;
+                    color: #6E798C;
+                }
+
+            }
+
+        }
+        
+        .card-c-min {
+            display: none;
+            width: 240px;
+            height: 224px;
+            border-radius: 16px;
+
+            @include tablet {
+                display: grid;
+                grid: auto / 100%;
+            }
+
+            @include mobile {
+                display: grid;
+                grid: auto / 100%;
+            }
+        
+            .card-c-min-img {
+                width: 282px;
+                height: 282px;
+                margin: -5px 0 0 -5px;
+            }
+
+            .card-c-min-text {
+                width: 184px;
+                height: 96px;
+                margin: 24px 0 0 16px;
+                font-family: 'DM Serif Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 32px;
+                color: #fff;
+            }
+
+            .card-c-min-button {
+                width: 101px;
+                height: 36px;
+                margin: 44px 0 0 123px;
+                background: #fff;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+                border-radius: 8px;
+
+                .button-text {
+                    width: 44px;
+                    height: 32px;
+                    margin: 3px 0 0 28px;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #000;
+                    opacity: 0.3;
+                }
+            }
+        }
+
+        .card-c-min.first {
+            background: linear-gradient(321.69deg, #FF6188 0%, #FFB199 100%);
+
+            .card-c-min-img {
+                background: url('img/Python_Icon.png') no-repeat;
+            }
+        }
+
+        .card-c-min.second {
+            background: linear-gradient(321.69deg, #4481EB 0%, #04BEFE 100%);
+
+            .card-c-min-img {
+                background: url('img/React_Icon.png') no-repeat;
+            }
+        }
+
+        .card-c-min.third {
+            background: linear-gradient(132.9deg, #63F7A1 1.3%, #27AE60 98.06%), linear-gradient(143.36deg, #D6FF94 3.66%, #3DC24B 103.19%);
+        
+            .card-c-min-img {
+                background: url('img/Sketch_Icon.png') no-repeat;
+            }
+        }
+
+    }
+} 
